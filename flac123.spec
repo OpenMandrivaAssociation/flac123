@@ -9,6 +9,7 @@ License:	GPL
 Group:		Sound
 URL:		http://flac-tools.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/flac-tools/%{name}-%{version}.tar.bz2
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	libao-devel
 BuildRequires:	popt-devel
 BuildRequires:	libflac-devel libogg-devel
