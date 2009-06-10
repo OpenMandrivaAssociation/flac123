@@ -1,11 +1,11 @@
 %define version 0.0.11
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary:	Command line program for playing FLAC audio files
 Name:		flac123
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2+
 Group:		Sound
 URL:		http://flac-tools.sourceforge.net/
 Source:		http://prdownloads.sourceforge.net/flac-tools/%{name}-%{version}.tar.bz2
