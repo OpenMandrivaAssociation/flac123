@@ -1,5 +1,5 @@
 %define version 0.0.11
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary:	Command line program for playing FLAC audio files
 Name:		flac123
