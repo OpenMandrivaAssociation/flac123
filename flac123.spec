@@ -1,5 +1,5 @@
-%define version 0.0.11
-%define release %mkrel 6
+%define version 0.0.12
+%define release %mkrel 1
 
 Summary:	Command line program for playing FLAC audio files
 Name:		flac123
@@ -8,11 +8,10 @@ Release:	%{release}
 License:	GPLv2+
 Group:		Sound
 URL:		http://flac-tools.sourceforge.net/
-Source:		http://prdownloads.sourceforge.net/flac-tools/%{name}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libao-devel
-BuildRequires:	popt-devel
-BuildRequires:	libflac-devel libogg-devel
+Source0:	http://downloads.sourceforge.net/project/flac-tools/flac123/%{name}-%{version}-release.tar.gz
+BuildRequires:	pkgconfig(ao)
+BuildRequires:	pkgconfig(popt)
+BuildRequires:	pkgconfig(flac) pkgconfig(ogg)
 
 %description
 %{name} is a command-line program for playing FLAC audio files.
@@ -25,15 +24,8 @@ BuildRequires:	libflac-devel libogg-devel
 %make CPPFLAGS=-DHAVE_INTTYPES_H
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc AUTHORS BUGS ChangeLog NEWS README*
 %{_bindir}/*
-
-
