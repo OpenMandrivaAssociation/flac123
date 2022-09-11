@@ -1,0 +1,17 @@
+diff -up flac123-0.0.12/acinclude.m4.omv~ flac123-0.0.12/acinclude.m4
+--- flac123-0.0.12/acinclude.m4.omv~	2022-09-11 23:49:07.179377861 +0200
++++ flac123-0.0.12/acinclude.m4	2022-09-11 23:49:36.848425376 +0200
+@@ -15,12 +15,8 @@ AC_ARG_ENABLE(aotest, [  --disable-aotes
+ 
+   if test "x$ao_prefix" != "xNONE" ; then
+     ao_args="$ao_args --prefix=$ao_prefix"
+-    AO_CFLAGS="-I$ao_prefix/include"
+-    AO_LIBS="-L$ao_prefix/lib"
+   elif test "$prefix" != ""; then
+     ao_args="$ao_args --prefix=$prefix"
+-    AO_CFLAGS="-I$prefix/include"
+-    AO_LIBS="-L$prefix/lib"
+   fi
+ 
+   # see where dl* and friends live
+diff -up flac123-0.0.12/configure.ac.omv~ flac123-0.0.12/configure.ac
