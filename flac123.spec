@@ -4,7 +4,7 @@ Version:	2.1.1
 Release:	1
 License:	GPLv2+
 Group:		Sound
-URL:		http://flac-tools.sourceforge.net/
+URL:		https://flac-tools.sourceforge.net/
 Source0:  https://github.com/flac123/flac123/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 #Source0:	http://downloads.sourceforge.net/project/flac-tools/flac123/%{name}-%{version}-release.tar.gz
 Patch0:		flac123-no-Llib.patch
