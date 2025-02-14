@@ -1,7 +1,7 @@
 Summary:	Command line program for playing FLAC audio files
 Name:		flac123
 Version:	2.1.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Sound
 URL:		https://flac-tools.sourceforge.net/
