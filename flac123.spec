@@ -9,6 +9,11 @@ Source0:  https://github.com/flac123/flac123/archive/refs/tags/v%{version}/%{nam
 #Source0:	http://downloads.sourceforge.net/project/flac-tools/flac123/%{name}-%{version}-release.tar.gz
 Patch0:		flac123-no-Llib.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(ao)
 BuildRequires:	pkgconfig(popt)
 BuildRequires:	pkgconfig(flac) 
